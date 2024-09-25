@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <!-- logo -->
+        <div class="logo-icon"></div>
+        <!-- navigation -->
+        <nav>
+            <a href="#section-home">Home</a>
+            <a href="#profile">Our Profile</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#message">Message Us</a>
+        </nav>
+    </header>
+    <hr />
+    <main>
+        <!-- HOME -->
+        <section id="section-home">
+            <h1>Hai <span id="userName">Endang</span>, Welcome To Website</h1>
+            <article>
+                <p>Ini adalah website latihan pertama</p>
+                <!-- photo benner -->
+                <div class="photo-banner">1366x578</div>
+            </article>
+        </section>
+        <hr />
+        <!-- PROFILE -->
+        <section id="profile">
+            <h1>Our Headquarter</h1>
+            <div class="headquarter">
+                <div class="location">
+                    <div class="logo-icon-profile"></div>
+                    <div style="text-align: center;">Jakarta</div>
+                </div>
+                <div class="location">
+                    <div class="logo-icon-profile"></div>
+                    <div style="text-align: center;">Bandung</div>
+                </div>
+                <div class="location">
+                    <div class="logo-icon-profile"></div>
+                    <div style="text-align: center;">Surabaya</div>
+                </div>
+            </div>
+        </section>
+        <hr />
+        <!-- MESSAGE -->
+        <section id="message">
+            <h1>Message Us</h1>
+            <div class="row">
+                <div class="column">
+                    <form id="messageForm">
+                        <!-- Name Field -->
+                        <label>Name:
+                            <input type="text" id="fname" name="fname">
+                        </label><br>
+                    
+                        <!-- Tanggal Lahir Field -->
+                        <label>Tanggal Lahir:
+                            <input type="date" id="lname" name="lname">
+                        </label><br>
+                    
+                        <!-- Gender Field (Radio Buttons) -->
+                        <label>Jenis Kelamin:</label><br>
+                        <label>Laki-laki
+                            <input type="checkbox" id="male" name="gender" value="Laki-laki">
+                        </label><br>
+                        
+                        <label>Perempuan
+                            <input type="checkbox" id="female" name="gender" value="Perempuan">
+                        </label><br>
+                    
+                        <!-- Pesan Field (Text Area) -->
+                        <label>Pesan:
+                            <textarea id="messageText" name="message" style="width: 300px; height: 300px;"></textarea>
+                        </label><br>
+                    
+                        <!-- Submit Button -->
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+                <div class="column" id="formResult">
+                    <!-- Hasil input form akan muncul di sini -->
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!-- Footer -->
+    <footer>
+        <p style="display: flex;flex-direction: row-reverse;">Create By Endang</p>
+    </footer>
+
+</body>
+
+</html>
